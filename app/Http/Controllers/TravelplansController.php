@@ -3,6 +3,7 @@
 namespace app\Http\Controllers;
 
 use app\Travelplan;
+use app\Travelentry;
 use app\Http\Requests;
 use app\Http\Controllers\Controller;
 
@@ -14,7 +15,7 @@ class TravelplansController extends Controller
 	public function index()
 	{
 		$travelplans = Travelplan::all();
-		return View::make('travelplans.index', compact('travelplans'));
+		return \View::make('travelplans.index', compact('travelplans'));
 	}
 
 	public function create()

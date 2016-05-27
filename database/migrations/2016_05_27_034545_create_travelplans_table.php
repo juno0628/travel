@@ -3,22 +3,9 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Createtravelplansandtravelentriestables extends Migration
+class CreateTravelplansTable extends Migration
 {
-   
-         /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-     public function down()
-    {
-        Schema::drop('travelentries');
-        Schema::drop('travelplans');
-        //
-    }
-
-      /**
+    /**
      * Run the migrations.
      *
      * @return void
@@ -55,6 +42,13 @@ class Createtravelplansandtravelentriestables extends Migration
         //
     }
 
-
-
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        //
+    }
 }
