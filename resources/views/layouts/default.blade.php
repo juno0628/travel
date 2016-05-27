@@ -1,6 +1,7 @@
-<!html>
+<html>
 	<head>
 		<title>Travel Planner</title>
+
 	</head>
 	<body>
 		<div class="container">
