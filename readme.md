@@ -7,14 +7,14 @@ Official Documentation
 
 a. To start, clone this git using command below
 
-git clone https://github.com/juno0628/travel.git
+- git clone https://github.com/juno0628/travel.git
 
 b.To run database migration and seeding run below command
-php artisan migrate
-php artisan db:seed
+- php artisan migrate
+- php artisan db:seed
 
 c.To run this application on localhost, run below command
-php artisan serve
+- php artisan serve
 
 d. http://localhost:8000 to checkout the index page  
 
