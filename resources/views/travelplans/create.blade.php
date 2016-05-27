@@ -1,20 +1,20 @@
-@extends('app')
-
+@extends('layouts.default')
+ 
 @section('content')
-	<h2>Travel Plans from travelplans index page</h2>
-	@if (!$travelplans->count())
-		<p> Please start creating plans </p>
-	@else 
-		<ul>
-				@foreach($travelplans as $travelplan)
-					<li><a href="{{route('travelplans.travelentries.show', [$travelplan->slug, $travelentry->slug])}}">{{$travelentry->name}}</a></li>
-				@endforeach
-		</ul>
-	@endif
-
-	<p>
-		{!! link_to_route('travelplans.create',' 'Create Travelplan')!!}
-	</p>
-
-@stop
-	
+    <h2>Create travelplan</h2>
+ 
+    {!! Form::model(new App\travelplan, ['route' => ['travelplans.store']]) !!}
+        @include('travelplans/partials/_form', ['submit_text' => 'Create travelplan'])
+    {!! Form::close() !!}
+@endsection
+ 
+<!-- /resources/views/travelplans/edit.blade.php -->
+@extends('app')
+ 
+@section('content')
+    <h2>Edit travelplan</h2>
+ 
+    {!! Form::model($travelplan, ['method' => 'PATCH', 'route' => ['travelplans.update', $travelplan->slug]]) !!}
+        @include('travelplans/partials/_form', ['submit_text' => 'Edit travelplan'])
+    {!! Form::close() !!}
+@endsection

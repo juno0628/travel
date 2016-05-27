@@ -28,9 +28,9 @@ class TravelplansController extends Controller
 		//
 	}
 
-	public function show()
+	public function show(Travelplan $travelplan)
 	{
-		return view('travelplans.show', compact('travelplans'));
+		return \View::make('travelplans.show', compact('travelplan'));
 	}
 
 	public function edit(Travelplan $travelplan)

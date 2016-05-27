@@ -29,19 +29,21 @@
             }
 */
             .title {
-                font-size: 32px;
+                text-align: center;
+                font-size: 40px;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
+                <br><br>
                 <div class="title">Travel Planner</div>
                 <br><br>
             </div>
-            <div class="button-container">
-                <div><button class='col-lg-6 default'><a href="/auth/login">Sign In</a></button></div>
-                <div><button class='col-lg-6 default'><a href="/travelplans">Travel Plans</a></button></div>
+            <br>
+                <button class='col-lg-6 alert btn-danger'><a href="/auth/login">Sign In</a></button>
+                <button class='col-lg-6 alert btn-danger'><a href="/travelplans">Travel Plans</a></button>
                 <div></div>
                 <div id="youtube-list">
                   <iframe class="col-md-6" width="450" height="315" src="https://www.youtube.com/embed/xMfz1jlyQrw" frameborder="0"></iframe>
