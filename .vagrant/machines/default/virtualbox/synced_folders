@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/travel":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/travel","hostpath":"/Users/juno0628/travel","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/juno0628/travel","disabled":false,"__vagrantfile":true}}}
