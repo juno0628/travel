@@ -19,7 +19,7 @@ class TravelentriesController extends Controller
 
 	public function create(Travelplan $travelplan)
 	{
-		return view('travelentries.create', compact('travelplan'));
+		return View::make('travelentries.create', compact('travelplan'));
 	}
 
 	public function store(Travelplan $travelplan)
@@ -29,12 +29,12 @@ class TravelentriesController extends Controller
 
 	public function show(Travelplan $travelplan, Travelentry $travelentry)
 	{
-		return view('travelentries.show', compact('travelplan','travelentry'));
+		return View::make('travelentries.show', compact('travelplan','travelentry'));
 	}
 
 	public function edit(Travelplan $travelplan, Travelentry $travelentry)
 	{
-		return view('travelentries.edit',compact('travelplan','travelentry'));
+		return View::make('travelentries.edit',compact('travelplan','travelentry'));
 	}
 
 	public function update(Travelplan $travelplan, Travelentry $travelentry)
